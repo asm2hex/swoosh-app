@@ -22,27 +22,25 @@ class LeagueVC: UIViewController {
   @IBAction func selectedLeague(_ sender: UIButton) {
     guard let buttonTitle = sender.title(for: .selected) else { return }
     
-    switch buttonTitle {
-    case "Mens":
-      selectLeague(leagueType: "mens")
-    case "Womens":
-      selectLeague(leagueType: "womens")
-    case "Co-ed":
-      selectLeague(leagueType: "coed")
-    default:
-      break
-    }
+    selectLeague(leagueType: buttonTitle)
     
   }
   
+  func selectLeague(leagueType: String) {
+    player.desiredLeague = leagueType
+    nextButton.isEnabled = true
+  }
   
   @IBAction func onNextTapped(_ sender: Any) {
     performSegue(withIdentifier: "skillVCSegue", sender: self)
   }
 
-  func selectLeague(leagueType: String) {
-    player.desiredLeague = leagueType
-    nextButton.isEnabled = true
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destination = segue.destination as? SkillVC {
+      destination.player = player
+    }
   }
 
 
