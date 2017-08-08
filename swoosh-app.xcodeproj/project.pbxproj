@@ -10,6 +10,7 @@
 		7E85619D1F39753100B5F9D7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85619C1F39753100B5F9D7 /* WelcomeVC.swift */; };
 		7E8561A51F3978E000B5F9D7 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8561A41F3978DF00B5F9D7 /* LeagueVC.swift */; };
 		7E8561A71F39791400B5F9D7 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8561A61F39791400B5F9D7 /* SkillVC.swift */; };
+		7E8561A91F3A009700B5F9D7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8561A81F3A009700B5F9D7 /* Player.swift */; };
 		7EFF09941F38E7F500D76D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF09931F38E7F500D76D47 /* AppDelegate.swift */; };
 		7EFF09991F38E7F500D76D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF09971F38E7F500D76D47 /* Main.storyboard */; };
 		7EFF099B1F38E7F500D76D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF099A1F38E7F500D76D47 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		7E85619C1F39753100B5F9D7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		7E8561A41F3978DF00B5F9D7 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		7E8561A61F39791400B5F9D7 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		7E8561A81F3A009700B5F9D7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7EFF09901F38E7F500D76D47 /* swoosh-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swoosh-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF09931F38E7F500D76D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF09981F38E7F500D76D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		7E8561A21F39777800B5F9D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E8561A81F3A009700B5F9D7 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				7E8561A51F3978E000B5F9D7 /* LeagueVC.swift in Sources */,
 				7EFF09941F38E7F500D76D47 /* AppDelegate.swift in Sources */,
 				7E8561A71F39791400B5F9D7 /* SkillVC.swift in Sources */,
+				7E8561A91F3A009700B5F9D7 /* Player.swift in Sources */,
 				7EFF09A71F38F31000D76D47 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

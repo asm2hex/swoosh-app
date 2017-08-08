@@ -103,7 +103,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-pC-Z8j">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-WK-SAj" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-WK-SAj" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="661" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40072073060000002" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -147,6 +147,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectedLeague:" destination="hnO-j5-II9" eventType="touchUpInside" id="cmp-xa-CGz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoo-gt-A0O" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="74.999999999999972" width="374" height="55"/>
@@ -158,6 +161,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectedLeague:" destination="hnO-j5-II9" eventType="touchUpInside" id="oEJ-KH-1bc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTh-ma-qDV" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="149.99999999999997" width="374" height="55"/>
@@ -169,6 +175,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectedLeague:" destination="hnO-j5-II9" eventType="touchUpInside" id="QxQ-CY-gA4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -205,6 +214,7 @@
                         <viewLayoutGuide key="safeArea" id="3lw-p8-ZnT"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="Cwg-WK-SAj" id="9rS-G3-kS9"/>
                         <segue destination="yBn-cm-1c4" kind="show" identifier="skillVCSegue" id="GsX-ez-3Wr"/>
                     </connections>
                 </viewController>
